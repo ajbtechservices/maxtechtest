@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+.App-header {
+    background-color: #282c34;
+    min-height: 100px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App-logo {
+    height: 48px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-body {
+    margin: 16px 24px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.postList {
+    margin-bottom: 32px;
+}
+
+.postView {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 16px 0;
+}
+
+.postView h2 {
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+.postView .body {
+    white-space: pre-wrap;
+}
+fieldset {
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 90%;
+    min-width: 0;
+}
+
+fieldset h3 {
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+fieldset > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset > ul > li {
+    margin-bottom: 8px;
+}
+
+fieldset label {
+    display: block;
+}
+fieldset input {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+fieldset textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+.container .postList {
+    max-width: 750px;
+}
+.createPost {
+    margin-top: 16px;
+    min-width: 300px;
+    width: 100%;
+    margin-left: 20px;
+    max-width: 500px;
+}
+@media (max-width: 767.98px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .createPost {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        min-width: 100%;
+    }
+}
